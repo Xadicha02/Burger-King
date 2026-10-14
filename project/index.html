@@ -1,0 +1,135 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductStore</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="logo" href="./index.html">ProductStore</a>
+
+        <div class="nav-links">
+            <button class="navAll active" type="button">All products</button>
+            <button class="btn1" type="button">Smartphones</button>
+            <button class="btn2" type="button">Tablets</button>
+            <button class="btn3" type="button">Laptops</button>
+        </div>
+
+        <div class="nav-right">
+             <a class="cart-link" href="./card.html">Savatcha</a>
+            <button class="openLogin" type="button">Login</button>
+        </div>
+    </nav>
+
+    <main>
+<section class="hero-slider">
+    <div class="slider-wrapper">
+
+        <div class="slide active">
+            <div class="slide-content">
+                <span class="slide-label">NEW COLLECTION</span>
+                <h1>Smart Gadgets<br>for Smart Life</h1>
+                <p>Eng so‘nggi texnologiyalarni biz bilan kashf eting.</p>
+                <button class="shop-btn">Shop now →</button>
+            </div>
+
+            <div class="slide-image">
+                <img src="./gadgets slider1.jpeg" alt="Smart Gadgets">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-content">
+                <span class="slide-label">BIG SALE</span>
+                <h1>Up to 50%<br>Discount</h1>
+                <p>Sevimli gadjetlaringizni yanada qulay narxda oling.</p>
+                <button class="shop-btn">View offers →</button>
+            </div>
+
+            <div class="slide-image">
+                <img src="./gadgets slider2.jpg" alt="Big Sale">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-content">
+                <span class="slide-label">SMART CHOICE</span>
+                <h1>Everything<br>in One Place</h1>
+                <p>Telefon, laptop, quloqchin va boshqa aksessuarlar.</p>
+                <button class="shop-btn">Explore →</button>
+            </div>
+
+            <div class="slide-image">
+                <img src="./gadgets slider3.png" alt="Gadgets">
+            </div>
+        </div>
+
+      
+        <button class="slider-arrow prev" aria-label="Previous slide">
+            &#10094;
+        </button>
+
+        <button class="slider-arrow next" aria-label="Next slide">
+            &#10095;
+        </button>
+
+        <!-- dots -->
+        <div class="slider-dots">
+            <button class="dot active"></button>
+            <button class="dot"></button>
+            <button class="dot"></button>
+        </div>
+    </div>
+</section>
+
+        <section class="filters">
+            <div class="line">
+                <label>Min price
+                    <input type="number" class="minVal" placeholder="e.g. 300">
+                </label>
+                <label>Max price
+                    <input type="number" class="maxVal" placeholder="e.g. 1000">
+                </label>
+                <button class="btn4" type="button">Filter price</button>
+            </div>
+
+            <div class="line">
+                <button class="sortOrg active" type="button">Original</button>
+                <button class="sortUp" type="button">Price: low to high</button>
+                <button class="sortDown" type="button">Price: high to low</button>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="section-title">
+                <h2>Available products</h2>
+                <p class="productCount"></p>
+            </div>
+            <div class="box"></div>
+        </section>
+    </main>
+
+    <div class="modal" id="loginModal">
+        <div class="modal-box">
+            <button class="closeModal" type="button" aria-label="Close">&times;</button>
+
+            <h2>Welcome back</h2>
+            <p class="modal-text">Log in to continue shopping.</p>
+
+            <input class="inpEmail" type="email" placeholder="Email">
+            <div class="password-row">
+                <input class="inpPass" type="password" placeholder="Password">
+                <button class="show" type="button">Show</button>
+            </div>
+
+            <p class="message"></p>
+            <button class="btnLogin" type="button">Login</button>
+        </div>
+    </div>
+    <script src="./common.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
+
